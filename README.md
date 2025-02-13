@@ -7,7 +7,7 @@ It does this by checking for the .fow file with the largest file size since in G
 
 You can use the .ahk file in this repository to run both Grim Dawn and this "gdfowsync.exe" with a single file click. Its just for convenience. If you'd prefer not to use it, start the game first and than run "gdfowsync.exe".
 
-Search for "USERPATH" in the project to see where you need to change to suit your own installation.
+Update the paths in gdfowsync.ini depending on your own installation.
 
 # Packaging
 
