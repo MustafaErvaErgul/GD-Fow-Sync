@@ -1,22 +1,27 @@
 # Introduction
-Python code that lets you generate a ".exe" that syncs your fog of war discovery between Grim Dawn characters.
 
-The program watches for changes in the Grim Dawn save directory and syncs the most updated .fow file across all characters.
+This Python program creates an .exe that automatically syncs your fog of war (.fow) discovery across all Grim Dawn characters.
 
-It does this by checking for the .fow file with the largest file size since in Grim Dawn the more you discover the map the bigger the .fow file gets.
+It monitors the game's save directory and detects the .fow file with the largest size—since more map discovery results in a bigger file—then copies it to all characters.
 
-You can use the .ahk file in this repository to run both Grim Dawn and this "gdfowsync.exe" with a single file click. Its just for convenience. If you'd prefer not to use it, start the game first and than run "gdfowsync.exe".
+For convenience, you can use the included .ahk script to launch both Grim Dawn and gdfowsync.exe with a single click. Otherwise, start the game first, then run gdfowsync.exe.
 
-Update the paths in gdfowsync.ini depending on your own installation.
+Update "gdfowsync.ini" with your custom Grim Dawn paths before use.
 
 # Installation
+
+You can package the .exe yourself using the python code or just head to the releases and download the latest .exe from there. 
+
+Make sure to update the .ini file with the correct paths for your system.
 
 [Download the latest release](https://github.com/MustafaErvaErgul/GD-Fow-Sync/releases)
 
 # Packaging
 
-Creating the .exe with console for debugging purposes
+To create the .exe yourself, use PyInstaller:
+
+With console (for debugging):
 * python -m PyInstaller --onefile gdfowsync.py
 
-Creating the .exe without console for general use
+Without console (for general use):
 * python -m PyInstaller --onefile --noconsole gdfowsync.py
