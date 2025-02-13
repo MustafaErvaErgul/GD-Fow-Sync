@@ -9,6 +9,10 @@ You can use the .ahk file in this repository to run both Grim Dawn and this "gdf
 
 Update the paths in gdfowsync.ini depending on your own installation.
 
+# Installation
+
+[Download the latest release](https://github.com/MustafaErvaErgul/GD-Fow-Sync/releases)
+
 # Packaging
 
 Creating the .exe with console for debugging purposes
